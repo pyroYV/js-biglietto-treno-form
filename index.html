@@ -5,14 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
-    <h1>inserisci km qui</h1>
-    <input type="number" id="input-km">
-    <h1>inserisci età qui</h1>
-    <input type="number" id="input-age">
-    <a href="#" class="btn" id="submit-btn">submit</a>
+<body class="bg-light ">
+    <div class="container shadow-lg rounded-2 p-5 mt-5 bg-warning">
+        <div class="row">
+            <div class="col-10">
+                <h2>Inserisci km qui</h2>
+                <input type="number" id="input-km">
+             </div>
+             <div class="col-10"> 
+            <h2>Inserisci età qui</h2>
+                <input type="number" id="input-age">
+            </div>
+            <h2>Inserisci il tuo nome</h2>
+             <input type="text" id="input-name">
+            </div>
+            <div class="row">
+                <div class="col-2 mt-3">
+                    <a href="#" class="btn btn-primary " id="submit-btn">SUBMIT</a>
+                </div>
+                <div class="col-2 mt-3">
+                    <a href="#" class="btn btn-secondary " id="reset-btn">RESET</a>
+                </div>
+             </div>
+        </div>
+    </div> 
+    <h1 class="text-center">Il tuo biglietto</h1>
+    <div class="container shadow-lg rounded-2 p-5 mt-5 bg-secondary">
+        <div class="row d-none" id="result">
+            <h3>Dettaglio passeggeri</h3>
+            <div class="col-4 fw-bold">
+                <h4>
+                    Nome passeggero
+                </h4>
+                <span id="user-name"></span>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-3">
+                        <h4 class="mb-2">
+                            Offerta
+                        </h4>
+                        <span id="sale-type">
+                            tre
+                        </span>
+                    </div>
+                    <div class="col-3">
+                        <h4 class="mb-2">
+                            Carrozza
+                        </h4>
+                        <span id="wagon">
+                            tre
+                        </span>
+                    </div>
+                    <div class="col-3">
+                        <h4 class="mb-2">
+                            Codice CP
+                        </h4>
+                        <span id="cp-code">
+                            tre
+                        </span>
+                    </div>
+                    <div class="col-3">
+                        <h4 class="mb-2">
+                            Costo Biglietto
+                        </h4>
+                        <span id="sale-price">
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
